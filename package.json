@@ -6,6 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:develop": "tsc -b && vite build --mode develop",
+    "build:localdev": "tsc -b && vite build --mode localdev",
+    "build:release": "tsc -b && vite build --mode release",
+    "build:master": "tsc -b && vite build --mode master",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -24,6 +28,7 @@
     ]
   },
   "dependencies": {
+    "env-cmd": "^10.1.0",
     "react": "^18.3.1",
     "react-app-polyfill": "^3.0.0",
     "react-dom": "^18.3.1"
