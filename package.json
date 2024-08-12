@@ -11,7 +11,8 @@
     "build:release": "tsc -b && vite build --mode release",
     "build:master": "tsc -b && vite build --mode master",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest"
   },
   "browsersList": {
     "production": [
@@ -35,6 +36,11 @@
     "sass": "^1.77.8"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
@@ -45,6 +51,12 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-transformer-svg": "^2.0.2",
+    "test-node": "^0.0.2",
+    "ts-jest": "^29.2.4",
     "typescript": "^5.2.2",
     "vite": "^5.3.4",
     "vite-plugin-eslint": "^1.8.1",
