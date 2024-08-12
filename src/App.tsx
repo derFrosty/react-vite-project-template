@@ -1,23 +1,27 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '../public/vite.svg';
+import ReactLogo from './assets/react.svg';
+import ViteLogo from '../public/vite.svg';
 
 function App() {
     const [count, setCount] = useState(0);
 
     return (
         <>
-            <div>
+            <div className="logos">
                 <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
+                    <div className="logo">
+                        <ViteLogo />
+                    </div>
                 </a>
                 <a href="https://react.dev" target="_blank" rel="noreferrer">
-                    <img src={reactLogo} className="logo react" alt="React logo" />
+                    <div className="logo react">
+                        <ReactLogo />
+                    </div>
                 </a>
             </div>
             <h1>Vite + React</h1>
             <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
+                <button type="button" onClick={() => setCount((c) => c + 1)}>
                     count is {count}
                 </button>
                 <p>
